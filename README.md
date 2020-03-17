@@ -1,4 +1,4 @@
-# vue_tailwind
+# Vue Tailwind CSS
 
 ## Project setup
 ```
@@ -10,9 +10,14 @@ npm install
 npm run serve
 ```
 
+### Compiles and minifies for development
+```
+npm run build:dev
+```
+
 ### Compiles and minifies for production
 ```
-npm run build
+npm run build:prod
 ```
 
 ### Lints and fixes files
