@@ -1,4 +1,13 @@
 module.exports = {
+  chainWebpack: (config) => {
+    config
+      .plugin('html')
+      .tap((args) => {
+        args[0].title = 'Vue Tailwind CSS'
+        return args
+      })
+  },
+
   configureWebpack: {
     optimization: {
       splitChunks: {
@@ -9,4 +18,4 @@ module.exports = {
 
   productionSourceMap: true,
   css: { sourceMap: false }
-};
+}
